@@ -23,4 +23,10 @@ public class TestController {
         dao.save(item);
         return "ok";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/send-ok", produces = "text/plain")
+    public @ResponseBody
+    String sendOk() {
+        return "ok";
+    }
 }
