@@ -12,38 +12,63 @@
 
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
+        <springframework.version>5.1.1.RELEASE</springframework.version>
     </properties>
 
     <dependencies>
         <dependency>
+            <groupId>org.attoparser</groupId>
+            <artifactId>attoparser</artifactId>
+            <version>2.0.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.0.9.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring5</artifactId>
+            <version>3.0.10.RELEASE</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
